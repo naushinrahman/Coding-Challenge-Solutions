@@ -1,4 +1,11 @@
- 
+//given an integer array, divid the array into 2 subsets A ans B while respecting the following conditions:
+// -the intersection of A and B is null
+// -the union of A and B is equal to the original array
+// -the number of elements is subset A is minimal
+// -the sum of A's elements is greater than the sum of B's elements
+//Return the subset A in increasing order where the sum of A's elements is greater than the sum of B's elements. 
+//If more than one subset exists, retunr the one with the maximal sum 
+
  function subsetA(arr) {
      for (var i = 0; i < arr.length; i++) { 
          for (var j = 0; j < (arr.length - i - 1); j++) { 
