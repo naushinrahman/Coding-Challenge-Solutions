@@ -33,7 +33,7 @@
      }
      for (var i = 0; i < subSetA.length; i++) { 
         for (var j = 0; j < (subSetA.length - i - 1); j++) { 
-            if (arr[j] > subSetA[j + 1]) { 
+            if (subSetA[j] > subSetA[j + 1]) { 
                 var temp = subSetA[j] 
                 subSetA[j] = subSetA[j + 1] 
                 subSetA[j + 1] = temp 
