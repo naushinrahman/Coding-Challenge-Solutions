@@ -24,6 +24,25 @@ def sumPowersOf2(n):
         return 2
     return 2**n + sumPowersOf2(n-1)
 
+
 # print(sumPowersOf2(5))
 # print(sumPowersOf2(2))
 
+
+'''
+implement binary search
+'''
+def binarySearch(my_list, target, high, low):
+    if (low > high):
+        return -1
+    mid = (high + low) / 2
+    
+    if my_list[mid] == target:
+        return mid
+    
+    if (target < my_list[mid]):
+        return binarySearch(my_list, low, mid - 1, target)
+    
+    if (target > my_list[mid]):
+        return binarySearch(my_list, mid + 1, high, target)
+  
